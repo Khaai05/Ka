@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>2356210001 - Phan Thị Khả Ái</title>
+
+<script>
+function tinhtong (x1,x2)
+{
+return parseInt(x1)+parseInt(x2);
+}
+function tinhhieu (x1,x2)
+{
+return parseInt(x1)-parseInt(x2);
+}
+function tinhtich (x1,x2)
+{
+return parseInt(x1)*parseInt(x2);
+}
+function tinhthuong (x1,x2)
+{
+return parseInt(x1)/parseInt(x2);
+}
+function tinhtongdayso (x1,x2)
+{
+var tong;
+tong=0;
+for(let i=parseInt(x1);i<=parseInt(x2);i++)
+tong=tong+i;
+localStorage.x=tong;
+return tong; 
+}
+function thongbao()
+{
+for(let i=1;i<=1;i++)
+alert(localStorage.x)
+}
+
+</script>
+
+
+</head>
+<body>
+<form>
+<lable>số thứ 1:</lable>
+<input type="text" id="sothu1" name="sothu1">
+<br><br>
+<lable>số thứ 2:</lable>
+<input type="text" id="sothu2" name="sothu2">
+<br><br>
+<lable>số thứ 3:</lable>
+<input type="text" id="sothu3" name="sothu3">
+<br><br>
+<input type="button" onclick="sothu3.value=tinhtong(sothu1.value,sothu2.value)" value="Tính tổng">
+<input type="button" onclick="sothu3.value=tinhhieu(sothu1.value,sothu2.value)" value="Tính hiệu">
+<input type="button" onclick="sothu3.value=tinhtich(sothu1.value,sothu2.value)" value="Tính tich">
+<input type="button" onclick="sothu3.value=tinhthuong(sothu1.value,sothu2.value)" value="Tính thương">
+<input type="button" onclick="sothu3.value=tinhtongdayso(sothu1.value,sothu2.value)" value="Tổng dãy số">
+<input type="button" onclick="thongbao()" value="Thông báo">
+
+
+</form>
+</body>
+</html>
